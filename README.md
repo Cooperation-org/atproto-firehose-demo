@@ -4,8 +4,9 @@ Python intro to the AT Protocol firehose. Stream Bluesky posts, filter for what 
 
 ## New to ATProto?
 
+- [The AT Protocol — original Bluesky announcement](https://bsky.social/about/blog/10-18-2022-the-at-protocol) — Oct 2022, originally at blueskyweb.xyz
 - [atproto.com](https://atproto.com/) — the protocol site
-- [AT Protocol overview (Bluesky docs)](https://docs.bsky.app/docs/advanced-guides/atproto)
+- [AT Protocol overview (Bluesky docs)](https://docs.bsky.app/docs/advanced-guides/atproto) — covers PDS, Relay, AppView
 - [AT Protocol on Wikipedia](https://en.wikipedia.org/wiki/AT_Protocol)
 
 ## Run
@@ -13,10 +14,11 @@ Python intro to the AT Protocol firehose. Stream Bluesky posts, filter for what 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python jetstream_hashtag.py
+python jetstream_hashtag.py                      # default needle: Tucson
+python jetstream_hashtag.py --needle "#Phoenix"  # any case-insensitive substring
 ```
 
-Prints `https://bsky.app/profile/<did>/post/<rkey>  ::  <text>` per match. `NEEDLE` at top of the file controls the filter.
+Prints `https://bsky.app/profile/<did>/post/<rkey>  ::  <text>` per match. Pass `--needle` to filter for something else.
 
 ## The two scripts
 
@@ -54,7 +56,7 @@ You do **not** need to run an AppView. A custom feed is a separate service (a **
 
 - [atproto-app-builder](https://github.com/YetAnotherJonWilson/atproto-app-builder) — TypeScript starter for atproto apps
 - [LexiStats](https://lexistats.linkedtrust.us/) — live stats on which ATProto lexicons are actually in use
-- [Blacksky](https://github.com/blacksky-algorithms) / [rsky](https://github.com/blacksky-algorithms/rsky) — community Rust atproto stack; relay at `atproto.africa`
+- [Blacksky](https://github.com/blacksky-algorithms) / [rsky](https://github.com/blacksky-algorithms/rsky) — community-run Rust atproto stack (relay, PDS, AppView), **fully independent** of Bluesky's infrastructure. Stayed up during Bluesky's April 2026 DDoS outage and saw a spike in user migrations ([TechCrunch](https://techcrunch.com/2026/04/17/its-not-just-you-bluesky-is-sorta-down/)). Relay at `atproto.africa`.
 
 ## ATProto work in Cooperation-org
 
