@@ -25,9 +25,8 @@ Prints `https://bsky.app/profile/<did>/post/<rkey>  ::  <text>` per match. `NEED
 
 Neither stream supports server-side hashtag filtering. Jetstream filters server-side by collection and DID; hashtag match is in Python.
 
-## Python resources
+## Further reading
 
-- [MarshalX/atproto](https://github.com/MarshalX/atproto) — the Python SDK
 - [Dave Peck — Jetstream in a few lines of Python](https://davepeck.org/notes/bluesky/blueskys-jetstream-with-just-a-few-lines-of-python/)
 - [Jaz — Shrinking the firehose by >99%](https://jazco.dev/2024/09/24/jetstream/)
 
@@ -43,13 +42,13 @@ You do **not** need to run an AppView. A custom feed is a separate service (a **
 ## What people build on ATProto
 
 - **Custom feeds** — location (`#Tucson`), topic, community, ML-ranked
-- **Bots** — mention-driven RAG, auto-posters (see [atmosphere-bot](https://github.com/Cooperation-org/atmosphere-bot))
+- **Bots** — mention-driven RAG, auto-posters
 - **Labelers** — moderation and custom content labels
 - **Cross-posting bridges** — Ghost, RSS, Mastodon ↔ Bluesky
-- **Analytics** — [LexiStats](https://lexistats.linkedtrust.us/), keyword and topic trends
-- **Custom lexicons** — define your own record types, others can index them ([claim-lexicon](https://github.com/Cooperation-org/claim-lexicon))
+- **Analytics** — lexicon usage, keyword and topic trends
+- **Custom lexicons** — define your own record types, others can index them
 - **Run your own PDS** — self-host identity and data
-- **Third-party relay or AppView** — see [Blacksky](https://github.com/blacksky-algorithms)
+- **Third-party relay or AppView** — community-run implementations
 
 ## Beyond Bluesky
 
