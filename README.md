@@ -63,4 +63,8 @@ You do **not** need to run an AppView. A custom feed is a separate service (a **
 - [lexistats](https://github.com/Cooperation-org/lexistats) / [lexistats-api](https://github.com/Cooperation-org/lexistats-api)
 - [claim-atproto](https://github.com/Cooperation-org/claim-atproto), [claim-lexicon](https://github.com/Cooperation-org/claim-lexicon)
 - [atmosphere-bot](https://github.com/Cooperation-org/atmosphere-bot)
-- [ghost-atproto](https://github.com/Cooperation-org/ghost-atproto)
+- [Zombie](https://github.com/Cooperation-org/Zombie) — Ghost fork with Bluesky comments bridged **both ways** between Bluesky and non-Bluesky users; see the [progressive-scope OAuth how-to](https://linkedtrust.us/blog/at-proto-oauth-with-progressive-scope-upgrade-a-how-to/) and [this thread](https://bsky.app/profile/did:plc:3akk2lpjh6vz7yr74j2wgjk6/post/3mhhiswtzlc2f)
+
+## Worth reading
+
+- [Mike Masnick — ATproto: The Enshittification Killswitch That Enables Resonant Computing](https://www.techdirt.com/2026/01/27/atproto-the-enshittification-killswitch-that-enables-resonant-computing/) (Techdirt, Jan 2026)
