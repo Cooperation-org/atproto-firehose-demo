@@ -70,9 +70,6 @@ ATProto / Bluesky work already happening in this org (verified via each repo's d
 - **[ghost-atproto](https://github.com/Cooperation-org/ghost-atproto)** — Ghost ↔ Bluesky integration
 - **[ghost-atproto-standard-site-guide](https://github.com/Cooperation-org/ghost-atproto-standard-site-guide)** — Guide for the above
 
-Local/Tucson-adjacent:
-
-- **[take-action-tucson](https://github.com/Cooperation-org/take-action-tucson)** — site for TakeActionTucson.org (natural consumer of a `#Tucson` firehose feed)
 
 ## Jetstream endpoints
 
